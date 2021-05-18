@@ -18,7 +18,8 @@
     "build:js": "webpack --mode=production",
     "watch:js": "onchange \"src/js\" -- webpack --mode=development",
     "build:html": "posthtml -c posthtml.json",
-    "watch:html": "onchange \"src/views\" -- npm run build:html"
+    "watch:html": "onchange \"src/views\" -- npm run build:html",
+    "start": "run-p build watch"
   },
   "author": "Carlo Centofanti",
   "license": "ISC",
